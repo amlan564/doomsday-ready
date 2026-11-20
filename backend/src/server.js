@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import movieRoutes from "./routes/movie-routes.js";
+import cinemaRoutes from "./routes/cinema-routes.js";
 import errorHandler from "./middleware/error-handler.js";
 
 dotenv.config();
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/movies", movieRoutes);
+app.use("/api/cinemas", cinemaRoutes);
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({
