@@ -287,17 +287,9 @@ erDiagram
 
 ## AI Tool Usage
 
-ChatGPT was used as an AI assistance tool during development.
+ChatGPT was occasionally used during development to clarify concepts, troubleshoot issues and get guidance when I encountered difficulties.
 
-Its assistance included:
-
-- Discussing application architecture and implementation approaches.
-- Reviewing code structure and helping troubleshoot issues.
-- Supporting algorithm implementation and validation.
-- Assisting with frontend component development and UI improvements.
-- Helping prepare project documentation and setup instructions.
-
-All generated suggestions and code were reviewed, adapted, and tested during implementation.
+All implementation decisions, code integration, and application testing were handled by me.
 
 ## License
 
