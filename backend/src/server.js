@@ -23,6 +23,15 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+app.use((req, res, next) => {
+  const error = new Error(`Route not found: ${req.method} ${req.originalUrl}`);
+
+  error.statusCode = 404;
+  error.code = "ROUTE_NOT_FOUND";
+
+  next(error);
+});
+
 app.use(errorHandler);
 
 const startServer = async () => {
